@@ -1,6 +1,9 @@
 # VSCode files
 .vscode
 
+# Node modules
+node_modules/
+
 # Prerequisites
 *.d
 
