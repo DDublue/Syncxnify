@@ -4,8 +4,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MALotify</title>
+    <link rel="stylesheet" href="./css/styles/output.css">
   </head>
-  <body>
+  <body class="flex flex-col h-screen bg-neutral-950 text-white">
+    <!-- Navbar Container -->
+    <header class="flex items-center bg-neutral-900 h-20">
+      <!-- Navbar -->
+      <section class="mx-auto relative px-4 w-full max-w-full">
+        <!-- Nav Title -->
+        <div class="text-4xl font-sans font-medium absolute left-1/8 top-1/2 -translate-y-1/2">
+          Malotify
+        </div>
+        <!-- Navbar Menu -->
+        <!-- *2-split* -->
+        <nav class="flex p-4 ml-48 justify-between text-white">
+          <div class="flex items-center gap-5">
+            <a class="rounded-md bg-neutral-950 p-2 hover:bg-gradient-to-b from-blue-800 to-blue-950" href="">Create</a>
+            <a class="rounded-md bg-neutral-950 p-2 hover:bg-gradient-to-b from-blue-800 to-blue-950" href="">__blank__</a>
+          </div>
+          <div class="flex">
+            <a class="rounded-md bg-neutral-950 px-4 py-2 hover:bg-gradient-to-b from-green-600 to-green-700" href="">Login</a>
+          </div>
+        </nav>
+      </section>
+    </header>
 
+    <!-- Hero Container -->
+    <section class="flex flex-col mb-auto items-center">
+      <!-- Title and Description -->
+      <article class="h-96 w-full text-center bg-gradient-to-b from-neutral-900 to-neutral-950">
+        <h1 class="font-bold py-10 text-6xl">
+          Malotify
+        </h1>
+        <h2 class="font-medium px-10 py-6 text-3xl">
+          Gather songs from animes using MyAnimeList and create Spotify Playlists from them!
+        </h2>
+      </article> 
+      <!-- Buttons -->
+      <article class="">
+        <button class="px-5 py-2 bg-slate-500
+                       hover:bg-gradient-to-b from-slate-500 to-slate-600"
+                href="">
+          Quick Playlist
+        </button>
+        <button class="px-5 py-2 bg-slate-500
+                       hover:bg-gradient-to-b from-slate-500 to-slate-600"
+                href="">
+          Detailed Playlist
+        </button>
+      </article>       
+    </section>
+
+    <!-- Footer Container -->
+    <footer class="flex bg-neutral-900">
+      <article class="p-5 font-light text-xl">
+        © 2024 David Wu
+      </article>
+    </footer>
   </body>
 </html>
