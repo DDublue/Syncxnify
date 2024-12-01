@@ -21,7 +21,7 @@ export default function RootLayout({
         }
       >
         <Header />
-        <main className="flex-grow pt-1">
+        <main className="flex-grow py-4">
           {children}
         </main>
         <Footer />
