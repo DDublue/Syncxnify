@@ -14,18 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={
-          `flex flex-col min-h-screen font-geist-sans antialiased`
-        }
-      >
-        <Header />
-        <main className="flex-grow py-4">
-          {children}
-        </main>
-        <Footer />
-      </body>
-    </html>
+    <section className="flex flex-col min-h-svh">
+      <Header />
+      <main className="flex-grow py-4">
+        {children}
+      </main>
+      <Footer />
+    </section>
   );
 }

@@ -1,24 +1,30 @@
 'use client';
 
+import Link from "next/link";
+
 export default function Header() {
   return (
     <>
-      <header className="sticky top-0 z-50 w-full flex-none bg-background justify-items-center">
-        <div className="max-w-8xl mx-auto">
-          <div className="py-4 border-b px-8">
+      <header className="sticky top-0 z-50 w-full flex-none border-b bg-background justify-items-center">
+        <div className="max-w-7xl mx-auto">
+          <div className="py-4 px-8">
             <div className="relative flex items-center">
               {/* Logo */}
-              <div className="">
+              <Link href="/" className="font-bold">
                 Malotify
-              </div>
+              </Link>
 
               {/* Header Content */}
-              <div className="hidden md:flex md:relative items-center ml-auto">
-                Sign In
-              </div>
-              <div className="md:hidden flex relative items-center ml-auto">
-                (Dropdown Button)
-              </div>
+              <Link href="/login" className="hidden md:flex md:relative items-center ml-auto">
+                <span>
+                  Sign In
+                </span>
+              </Link>
+              <Link href="/login" className="md:hidden flex relative items-center ml-auto">
+                <span>
+                  (Dropdown Button)
+                </span>
+              </Link>
             </div>
           </div>
         </div>

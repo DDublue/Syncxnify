@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`flex flex-col min-h-screen font-geist-sans antialiased`}
+        className="font-geist-sans antialiased"
       >
         {children}
       </body>
