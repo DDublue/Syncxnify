@@ -11,7 +11,7 @@ export default function Header() {
             <div className="relative flex items-center">
               {/* Logo */}
               <Link href="/" className="font-bold">
-                Malotify
+                Syncxnify
               </Link>
 
               {/* Header Content */}

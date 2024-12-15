@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="font-geist-sans antialiased"
+        className="font-geist-sans antialiased min-w-[320px]"
       >
         {children}
       </body>
