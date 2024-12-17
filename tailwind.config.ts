@@ -70,6 +70,22 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+			colors: {
+				spotify: {
+					DEFAULT: 'hsl(var(--spotify-green))',
+					green: 'hsl(var(--spotify-green))',
+					black: 'hsl(var(--spotify-black))',
+					white: 'hsl(var(--spotify-white))',
+				},
+				mal: {
+					DEFAULT: 'hsl(var(--mal-blue))',
+					blue: 'hsl(var(--mal-blue))',
+					light: 'hsl(var(--mal-light-blue))',
+					dark: 'hsl(var(--mal-dark-blue))',
+					background: 'hsl(var(--mal-background))',
+					text: 'hsl(var(--mal-text))',
+				}
+			},
       fontFamily: {
         'geist-sans': ['"Geist Sans"', 'sans-serif'],
         'geist-mono': ['"Geist Mono"', 'monospace'],
