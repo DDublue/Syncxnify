@@ -6,7 +6,7 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-col items-center">
           <div className="p-16">
             <p className="text-xl text-center">
