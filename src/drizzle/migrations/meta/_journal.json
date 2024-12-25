@@ -8,6 +8,13 @@
       "when": 1735086223575,
       "tag": "0000_even_snowbird",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1735101999137,
+      "tag": "0001_fine_apocalypse",
+      "breakpoints": true
     }
   ]
 }

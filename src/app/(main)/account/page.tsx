@@ -11,13 +11,6 @@ export default async function AccountPage() {
     );
   };
 
-  const user = session.user;
-
-  const userInfo = {
-    name: user.name,
-    email: user.email,
-  };
-
   return (
     <>
       <div className="max-w-5xl mx-auto px-4">
@@ -28,7 +21,7 @@ export default async function AccountPage() {
           </h2>
         <div className="flex flex-col items-center">
           <div className="bg-background p-2 rounded-md">
-            {JSON.stringify(userInfo, null, 2)}
+            {JSON.stringify(session, null, 2)}
           </div>
         </div>
       </div>
