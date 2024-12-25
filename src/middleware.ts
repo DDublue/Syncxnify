@@ -20,7 +20,7 @@ export default auth((req) => {
   if (isApiAuthRoute) {
     return;
   };
-  
+
   if (isAuthRoute) {
     if (isLoggedIn) {
       return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
@@ -31,6 +31,8 @@ export default auth((req) => {
   if (!isLoggedIn && !isPublicRoute) {
     return Response.redirect(new URL('/login', nextUrl))
   };
+
+  return;
 });
 
 export const config = {
