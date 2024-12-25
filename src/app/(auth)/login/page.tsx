@@ -3,8 +3,6 @@ import { auth, signIn } from "@/lib/auth";
 import { FaSpotify } from "react-icons/fa";
 
 export default async function LoginPage() {
-  const session = await auth();
-  console.log(session);
   return (
     <>
       <div className="flex flex-col min-h-svh">
