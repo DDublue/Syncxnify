@@ -14,7 +14,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = await auth();
   return (
     <section className="flex flex-col min-h-svh">
       <Header />

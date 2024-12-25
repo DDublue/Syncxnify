@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function HomePage() {
-
   return (
     <>
       <div className="max-w-5xl mx-auto px-4">

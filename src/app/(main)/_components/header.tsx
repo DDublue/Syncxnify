@@ -1,8 +1,10 @@
-'use client';
 
 import Link from "next/link";
+import { auth, signOut } from "@/lib/auth";
+import { Button } from "@/components/ui/button";
 
-export default function Header() {
+export default async function Header() {
+  const session = await auth();
   return (
     <>
       <header className="sticky top-0 z-50 w-full flex-none border-b bg-background justify-items-center">
@@ -15,11 +17,28 @@ export default function Header() {
               </Link>
 
               {/* Header Content */}
-              <Link href="/login" className="hidden md:flex md:relative items-center ml-auto">
-                <span>
-                  Sign In
-                </span>
-              </Link>
+              {session?.user
+                ?
+                <form
+                  action={async () => {
+                    "use server";
+                    await signOut();
+                  }}
+                  className="hidden md:flex md:relative items-center ml-auto"
+                >
+                  <button
+                    type="submit"
+                  >
+                    Logout
+                  </button>
+                </form>
+                :
+                <Link href="/login" className="hidden md:flex md:relative items-center ml-auto">
+                  <span>
+                    Sign In
+                  </span>
+                </Link>
+              }
               <Link href="/login" className="md:hidden flex relative items-center ml-auto">
                 <span>
                   (Dropdown Button)
